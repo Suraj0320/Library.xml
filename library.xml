@@ -1,0 +1,79 @@
+<library>
+  <books>
+    <book>
+      <title>The Catcher in the Rye</title>
+      <author>J.D. Salinger</author>
+      <publisher>Little, Brown and Company</publisher>
+      <publication_date>1951-07-16</publication_date>
+      <isbn>0316769177</isbn>
+      <genre>Fiction</genre>
+      <copies_available>3</copies_available>
+    </book>
+    <book>
+      <title>To Kill a Mockingbird</title>
+      <author>Harper Lee</author>
+      <publisher>J. B. Lippincott </publisher>
+      <publication_date>1960-07-11</publication_date>
+      <isbn>0061120081</isbn>
+      <genre>Fiction</genre>
+      <copies_available>2</copies_available>
+    </book>
+  <book><title>SGU</title><author>Sanjay Ghodawat</author><publisher>Sanjay Ghodawat</publisher><publication_date>20-03-2003</publication_date><isbn>565484446</isbn><genre>Education</genre><copies_available>100</copies_available></book></books>
+  <authors>
+    <author>
+      <first_name>J.D.</first_name>
+      <last_name>Salinger</last_name>
+      <date_of_birth>1919-01-01</date_of_birth>
+      <date_of_death>2010-01-27</date_of_death>
+    </author>
+    <author>
+      <first_name>Harper</first_name>
+      <last_name>Lee</last_name>
+      <date_of_birth>1926-04-28</date_of_birth>
+      <date_of_death>2016-02-19</date_of_death>
+    </author>
+  </authors>
+  <publishers>
+    <publisher>
+      <name>Little, Brown and Company</name>
+      <address>125 High Street, Boston, MA 02110</address>
+      <phone_number>617-227-0730</phone_number>
+      <email>info@littlebrown.com</email>
+    </publisher>
+    <publisher>
+      <name>J. B. Lippincott </name>
+      <address>227 South Sixth Street, Philadelphia 5, Pa.</address>
+      <phone_number>215-546-5000</phone_number>
+      <email>lippincott@lippincott.com</email>
+    </publisher>
+  </publishers>
+  <borrowers>
+    <borrower>
+      <first_name>John</first_name>
+      <last_name>Doe</last_name>
+      <address>123 Main St.</address>
+      <phone_number>555-1234</phone_number>
+      <email>johndoe@example.com</email>
+      <date_of_birth>1980-01-01</date_of_birth>
+      <date_of_membership>2021-01-01</date_of_membership>
+    </borrower>
+    <borrower>
+      <first_name>Jane</first_name>
+      <last_name>Smith</last_name>
+      <address>456 Oak St.</address>
+      <phone_number>555-5678</phone_number>
+      <email>janesmith@example.com</email>
+      <date_of_birth>1990-01-01</date_of_birth>
+      <date_of_membership>2022-01-01</date_of_membership>
+    </borrower>
+  </borrowers>
+  <loans>
+    <loan>
+      <book_id>1</book_id>
+      <borrower_id>1</borrower_id>
+      <date_checked_out>2022-04-01</date_checked_out>
+      <date_due>2022-04-15</date_due>
+      <date_returned>2022-04-01</date_returned>
+     </loan>
+</loans>
+</library>

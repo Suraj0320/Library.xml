@@ -1,0 +1,97 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="books">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="book" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="title" type="xs:string"/>
+                    <xs:element name="author" type="xs:string"/>
+                    <xs:element name="publisher" type="xs:string"/>
+                    <xs:element name="publication_date" type="xs:date"/>
+                    <xs:element name="isbn" type="xs:string"/>
+                    <xs:element name="genre" type="xs:string"/>
+                    <xs:element name="copies_available" type="xs:integer"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="authors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="author" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="first_name" type="xs:string"/>
+                    <xs:element name="last_name" type="xs:string"/>
+                    <xs:element name="date_of_birth" type="xs:date"/>
+                    <xs:element name="date_of_death" type="xs:date"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="publishers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="publisher" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="address" type="xs:string"/>
+                    <xs:element name="phone_number" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="borrowers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="borrower" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="first_name" type="xs:string"/>
+                    <xs:element name="last_name" type="xs:string"/>
+                    <xs:element name="address" type="xs:string"/>
+                    <xs:element name="phone_number" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="date_of_birth" type="xs:date"/>
+                    <xs:element name="date_of_membership" type="xs:date"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="loans">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="loan" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="book_id" type="xs:integer"/>
+                    <xs:element name="borrower_id" type="xs:integer"/>
+                    <xs:element name="date_checked_out" type="xs:date"/>
+                    <xs:element name="date_due" type="xs:date"/>
+                    <xs:element name="date_returned" type="xs:date"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
